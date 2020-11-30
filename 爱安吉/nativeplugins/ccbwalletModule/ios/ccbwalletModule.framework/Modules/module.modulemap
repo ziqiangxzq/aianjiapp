@@ -1,0 +1,6 @@
+framework module ccbwalletModule {
+  umbrella header "ccbwalletModule.h"
+
+  export *
+  module * { export * }
+}

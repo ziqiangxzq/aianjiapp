@@ -1,0 +1,603 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/start-page/start-page",
+			"style": {
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"titleNView": false //禁用原生导航栏
+				}
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"titleImage": "/static/index/title-logo.png",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{ /*天气*/
+							"width": "128px",
+							"color": "#060606",
+							"fontSize": "16px",
+							"text": "",
+							"float": "left"
+						}, { /*扫码*/
+							"width": "40px",
+							"color": "#060606",
+							"fontSize": "20px",
+							"text": "\ue634",
+							"fontSrc": "/static/font/iconfont.ttf",
+							"float": "right"
+						}, { /*搜索*/
+							"width": "40px",
+							"color": "#060606",
+							"fontSize": "20px",
+							"text": "\ue624",
+							"fontSrc": "/static/font/iconfont.ttf",
+							"float": "right"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/regist/regist",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/identity-attestation/identity-attestation",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/forget-pwd/forget-pwd",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/protocol/protocol",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/service/service",
+			"style": {
+				"navigationBarTitleText": "服务"
+			}
+		},
+		{
+			"path": "pages/media/media",
+			"style": {
+				"navigationBarTitleText": "融媒体"
+			}
+		},
+		{
+			"path": "pages/webview/webview",
+			"style": {
+				"navigationBarTitleText": "爱安吉"
+			}
+		},
+		{
+			"path": "pages/user-index/user-index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/user-change-password/user-change-password",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/user-modify/user-modify",
+			"style": {
+				"navigationBarTitleText": "完善信息"
+			}
+		},
+		{
+			"path": "pages/user-order/user-order",
+			"style": {
+				"navigationBarTitleText": "完善信息"
+			}
+		},
+		{
+			"path": "pages/user-invite-code/user-invite-code",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/user-invite-my/user-invite-my",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/user-about/user-about",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/user-help/user-help",
+			"style": {
+				"navigationBarTitleText": "帮助"
+			}
+		},
+		{
+			"path": "pages/user-newscollect/user-newscollect",
+			"style": {
+				"navigationBarTitleText": "新闻消息",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/news-detail/news-detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"width": "32px",
+							"color": "#000000",
+							"fontSize": "20px",
+							"text": "\ue608",
+							"fontSrc": "/static/font/iconfont.ttf",
+							"float": "right"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/news-service/news-service",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "应用新闻"
+			}
+		}, {
+			"path": "pages/news-search/news-search",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"searchInput": {
+							"align": "center",
+							"placeholder": "请输入关键字搜索新闻",
+							"borderRadius": "10upx",
+							"backgroundColor": "#fff"
+						}
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/news-subscribe/news-subscribe",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/news-subscribe-category/news-subscribe-category",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/news-subscribe-category-detail/news-subscribe-category-detail",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/special-content/special-content",
+			"style": {
+				"navigationBarTitleText": "专题"
+			}
+		},
+		{
+			"path": "pages/camera-index/camera-index",
+			"style": {
+				"navigationBarTitleText": "看安吉"
+			}
+		},
+		{
+			"path": "pages/camera-play/camera-play",
+			"style": {
+				"navigationBarTitleText": "看安吉",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"softinputNavBar": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/camera-list/camera-list",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/camera-more/camera-more",
+			"style": {
+				"navigationBarTitleText": "看安吉",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/camera-villagelist/camera-villagelist",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/camera-villageinfo/camera-villageinfo",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/pointshop-index/pointshop-index",
+			"style": {
+				"navigationBarTitleText": "积分商城",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{ /*帮助*/
+							"text": "\ue682",
+							"fontSrc": "/static/font/iconfont.ttf",
+							"fontSize": "23px"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/pointshop-turntable/pointshop-turntable",
+			"style": {
+				"navigationBarTitleText": "积分大转盘"
+			}
+		}, {
+			"path": "pages/pointshop-pointrule/pointshop-pointrule",
+			"style": {
+				"navigationBarTitleText": "积分说明"
+			}
+		}, {
+			"path": "pages/pointshop-pointlist/pointshop-pointlist",
+			"style": {
+				"navigationBarTitleText": "积分明细"
+			}
+		}, {
+			"path": "pages/pointshop-goodslist/pointshop-goodslist",
+			"style": {
+				"navigationBarTitleText": "兑奖品",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{ /*帮助*/
+							"text": "\ue682",
+							"fontSrc": "/static/font/iconfont.ttf",
+							"fontSize": "22px"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/pointshop-rechanglist/pointshop-rechanglist",
+			"style": {
+				"navigationBarTitleText": "兑换记录"
+			}
+		}, {
+			"path": "pages/zb-index/zb-index",
+			"style": {
+				"navigationBarTitleText": "直播"
+			}
+		}, {
+			"path": "pages/zb-detail/zb-detail",
+			"style": {
+				"navigationBarTitleText": "直播",
+				"navigationBarBackgroundColor": "#fff",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+						// "buttons": [{
+						// 	"width": "36px",
+						// 	"color": "#FFFFFF",
+						// 	"fontSize": "20px",
+						// 	"text": "\ue682",
+						// 	"fontSrc": "/static/font/iconfont.ttf",
+						// 	"float": "right"
+						// }]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/zb-list/zb-list",
+			"style": {
+				"navigationBarTitleText": "回放",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/zb-video/zb-video",
+			"style": {
+				"navigationBarTitleText": "回放",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"width": "32px",
+							"color": "#000000",
+							"fontSize": "20px",
+							"text": "\ue608",
+							"fontSrc": "/static/font/iconfont.ttf",
+							"float": "right"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/dyzx-index/dyzx-index",
+			"style": {
+				"navigationBarTitleText": "发布",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{ /*个人发布*/
+							"width": "30px",
+							"color": "#060606",
+							"fontSize": "20px",
+							"text": "\ue607",
+							"fontSrc": "/static/font/iconfont.ttf",
+							"float": "right"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/dyzx-mine/dyzx-mine",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}, {
+			"path": "pages/dyzx-add/dyzx-add",
+			"style": {
+				"navigationBarTitleText": "发布"
+			}
+		}, {
+			"path": "pages/dyzx-detail/dyzx-detail",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		},
+		{
+			"path": "pages/zp-index/zp-index",
+			"style": {
+				"navigationBarTitleText": "招聘",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/zp-recruitinformation/zp-recruitinformation",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/zp-newslist/zp-newslist",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/zp-newsdetail/zp-newsdetail",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		}, {
+			"path": "pages/zp-jobdetail/zp-jobdetail",
+			"style": {
+				"navigationBarTitleText": "岗位详情"
+			}
+		},
+		{
+			"path": "pages/telephone-index/telephone-index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/telephone-list/telephone-list",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/television-index/television-index",
+			"style": {
+				"navigationBarTitleText": "看电视"
+			}
+		},
+		{
+			"path": "pages/television-list/television-list",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/television-detail/television-detail",
+			"style": {
+				"navigationBarTitleText": "视频播放",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"width": "32px",
+							"color": "#000000",
+							"fontSize": "20px",
+							"text": "\ue608",
+							"fontSrc": "/static/font/iconfont.ttf",
+							"float": "right"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/broadcast-index/broadcast-index",
+			"style": {
+				"navigationBarTitleText": "应急广播",
+				"onReachBottomDistance": 200
+			}
+		},
+		{
+			"path": "pages/broadcast-disaster/broadcast-disaster",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/broadcast-newsdetail/broadcast-newsdetail",
+			"style": {
+				"navigationBarTitleText": "新闻详情"
+			}
+		},
+		{
+			"path": "pages/broadcast-shelter/broadcast-shelter",
+			"style": {
+				"navigationBarTitleText": "附近避灾点"
+			}
+		},
+		{
+			"path": "pages/broadcast-weather/broadcast-weather",
+			"style": {
+				"navigationBarTitleText": "天气预报"
+			}
+		},
+		{
+			"path": "pages/broadcast-notification/broadcast-notification",
+			"style": {
+				"navigationBarTitleText": "应急广播",
+				"onReachBottomDistance": 200
+			}
+		},
+		{
+			"path": "pages/busTicket-index/busTicket-index",
+			"style": {
+				"navigationBarTitleText": "汽车票",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{ /*个人发布*/
+							"width": "30px",
+							"color": "#060606",
+							"fontSize": "20px",
+							"text": "\ue607",
+							"fontSrc": "/static/font/iconfont.ttf",
+							"float": "right"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/busTicket-address/busTicket-address",
+			"style": {
+				"navigationBarTitleText": "目的地"
+			}
+		}, {
+			"path": "pages/busTicket-ticketlist/busTicket-ticketlist",
+			"style": {
+				"navigationBarTitleText": "车次查询"
+			}
+		}, {
+			"path": "pages/busTicket-orderdetail/busTicket-orderdetail",
+			"style": {
+				"navigationBarTitleText": "填写订单"
+			}
+		}, {
+			"path": "pages/busTicket-addpassenger/busTicket-addpassenger",
+			"style": {
+				"navigationBarTitleText": "添加乘客"
+			}
+		}, {
+			"path": "pages/busTicket-illustrate/busTicket-illustrate",
+			"style": {
+				"navigationBarTitleText": "用户须知"
+			}
+		},
+		{
+			"path": "pages/busTicket-orderpay/busTicket-orderpay",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		{
+			"path": "pages/busTicket-myorder/busTicket-myorder",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/ccbwallet/ccbwallet",
+			"style": {
+				"navigationBarTitleText": "建行钱包"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#898989",
+		"selectedColor": "#0090ff",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "#898989",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/index/1-1.png",
+			"selectedIconPath": "static/index/1-2.png",
+			"text": "新闻"
+		}, {
+			"pagePath": "pages/service/service",
+			"iconPath": "static/index/2-1.png",
+			"selectedIconPath": "static/index/2-2.png",
+			"text": "服务"
+		}, {
+			"pagePath": "pages/dyzx-index/dyzx-index",
+			"iconPath": "static/index/3-1.png",
+			"selectedIconPath": "static/index/3-2.png",
+			"text": "拍客"
+		 }, {
+			"pagePath": "pages/media/media",
+			"enablePullDownRefresh": true,
+			"iconPath": "static/index/4-1.png",
+			"selectedIconPath": "static/index/4-2.png",
+			"text": "融媒体"
+		}, 
+		{
+			"pagePath": "pages/user-index/user-index",
+			"iconPath": "static/index/5-1.png",
+			"selectedIconPath": "static/index/5-2.png",
+			"text": "我的"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "爱安吉",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	}
+}

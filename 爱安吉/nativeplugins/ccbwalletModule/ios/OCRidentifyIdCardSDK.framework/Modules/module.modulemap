@@ -1,0 +1,6 @@
+framework module OCRidentifyIdCardSDK {
+  umbrella header "OCRidentifyIdCardSDK.h"
+
+  export *
+  module * { export * }
+}
