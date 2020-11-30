@@ -1,0 +1,49 @@
+{
+	"name": "ccbwalletModule",
+	"id": "ccbwalletModule",
+	"version": "1.0.0",
+	"description": "钱包插件",
+	"_dp_type": "nativeplugin",
+	"_dp_nativeplugin": {
+		"android": {
+			"plugins": [{
+				"type": "module",
+				"name": "ccbwalletModule",
+				"class": "com.ccb.ccbwalletsdk.uni.moudule.ccbwalletModule"
+			}],
+			"integrateType": "aar",
+			"minSdkVersion": 22,
+			"permissions": [
+				"android.permission.READ_EXTERNAL_STORAGE",
+				"android.permission.WRITE_EXTERNAL_STORAGE",
+				"android.permission.CAMERA",
+				"android.permission.READ_CONTACTS",
+				"android.permission.WRITE_CONTACTS",
+				"android.permission.ACCESS_WIFI_STATE",
+				"android.permission.ACCESS_NETWORK_STATE",
+				"android.permission.CHANGE_WIFI_STATE",
+				"android.hardware.camera",
+				"android.hardware.camera.autofocus",
+				"android.hardware.camera.flash"
+			]
+		},"ios": {
+			"plugins": [{
+				"type": "module",
+				"name": "ccbwalletModule",
+				"class": "ccbwalletModule"
+			}],
+			"integrateType": "framework",
+			"frameworks": [
+				"libc++.tbd"
+			],
+			"resources": [
+				"OCRidentifyIdCardSDKExtra.bundle",
+				"CCBSDKExtra.bundle"
+			],
+			"privacies": [
+				"NSCameraUsageDescription",
+                "NSPhotoLibraryUsageDescription"
+			]
+		}
+	}
+}
